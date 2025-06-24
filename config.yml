@@ -1,0 +1,5 @@
+baseURL: 'https://loxodromic.systems/'
+languageCode: 'en-gb'
+title: 'Loxodromic Systems Limited'
+copyright: ''
+theme: 'hugo-scroll'
