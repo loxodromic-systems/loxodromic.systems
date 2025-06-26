@@ -69,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+body {
+  hyphens: none !important;
+}
 </style>
 
 {{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
