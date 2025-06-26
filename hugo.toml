@@ -79,8 +79,8 @@ enableEmoji = true
 
     [[params.contacts]]
         label = "email"
-        value = "ian@loxodromic.systems"
-        url = "mailto:ian@loxodromic.systems"
+        value = "hello@loxodromic.systems"
+        url = "mailto:hello@loxodromic.systems"
         icon = "fa fa-envelope"
 
 # Define additional languages
