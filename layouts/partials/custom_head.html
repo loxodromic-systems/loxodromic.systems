@@ -1,0 +1,78 @@
+<!-- A partial to be overwritten by the user.
+     Its content will appear before the closing </head>-tag -->
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Custom CSS via inline styles
+     You may use this template to add custom CSS to your site like so: -->
+
+<style>
+:root {
+
+  /* === Cover / Landing area === */
+  --cover-text-color: #FFFFFF;                     /* white text on hero/nav */
+  --highlight: #F4C95D;                             /* Compass gold */
+  --highlight-contrast: #0A192F;                   /* Deep navy */
+  --highlight-inverse: #0A192F;
+  --highlight-inverse-contrast: #FFFFFF;
+
+  --cover-title-and-description-guard-bg-color: rgba(253, 253, 253, 0.6);  /* soft white guard */
+  --cover-title-text-shadow: #FFFFFF 0px 0px 7px;
+
+  /* === sticky top/left navigation menus === */
+  --sticky-menu-text-color: #007ACC;               /* Azure blue */
+
+  /* === Alternating content (post) sections === */
+  --section-light-text-color: #1A1A1A;              /* standard body text */
+  --section-light-bg-color: #FDFDFD;                /* background */
+
+  --section-dark-text-color: #FFFFFF;               /* white text on navy */
+  --section-dark-bg-color: #0A192F;                 /* dark navy background */
+
+  --section-uni-quote: #6C7A89;                     /* subdued steel grey for blockquotes */
+  --section-uni-code-bg-color: #E0DED7;             /* code block bg */
+
+  /* === Single pages === */
+  --single-page-text-color: var(--section-light-text-color);
+  --single-page-bg-color: var(--section-light-bg-color);
+
+  /* === Footer === */
+  --footer-color-background: #0A192F;               /* match dark section */
+  --footer-color: #BBC7CC;                          /* pale steel for text */
+
+  /* === Lists === */
+  --ul-li-icon: fa-circle;                          /* change to a clean circle icon or leave empty */
+}
+body,
+button,
+input,
+select,
+textarea,
+.blog-description,
+a.btn,
+#site-languages .btn-lang,
+.fixed-nav,
+.site-footer,
+.site-footer a,
+.navbar,
+#site-header,
+#menu a,
+#scroll-down,
+blockquote,
+code {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+/* Optional: headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-weight: 600;
+}
+
+</style>
+
+{{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
+{{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
+{{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
+<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
+
