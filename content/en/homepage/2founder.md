@@ -11,4 +11,4 @@ A specialist in backend development, distributed systems, and cloud automation, 
 
 Ian writes about software, systems thinking, and career reflections at his blog, and occasionally posts on LinkedIn.
 
-Outside of work, he enjoys books, music, and long walks in the Dales with Sadie the schnauzer.
+Outside of work, he enjoys books, music, and long walks with Sadie the schnauzer.
