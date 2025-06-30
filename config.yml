@@ -47,7 +47,3 @@ languages:
     weight: 10
     languageName: "English"
     contentDir: "content/en"
-
-services:
-  googleAnalytics:
-    id: G-C6HTB86YPX
