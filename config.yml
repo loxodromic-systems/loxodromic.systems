@@ -1,0 +1,53 @@
+baseURL: "https://loxodromic.systems"
+disableKinds:
+  - section
+  - taxonomy
+  - term
+  - RSS
+  - robotsTXT
+defaultContentLanguage: "en"
+theme: "hugo-scroll"
+title: "Loxodromic Systems Limited"
+enableEmoji: true
+
+params:
+  favicon: "images/favicon.png"
+  images:
+    - "images/cover-image.jpg"
+  title_guard: false
+  title: "Loxodromic Systems Limited"
+  description: "Charting stable paths through complex systems"
+  language_menu: false
+  show_current_lang: false
+  copyright: "© Loxodromic Systems Limited"
+  hidedesignbyline: true
+  invertSectionColors: false
+  image_options: "webp q90 lanczos photo"
+  combine_page_and_site_title: true
+
+  footer:
+    showContactIcons: true
+    showFooterLinks: true
+
+  meta:
+    keywords: "software, consultancy, cloud-native, scalable, distributed, systems, developer, azure, aws"
+
+  contacts:
+    - label: "phone"
+      value: "+44 7901 828483"
+      url: "tel:+44 7901 828483"
+      icon: "fa fa-phone"
+    - label: "email"
+      value: "hello@loxodromic.systems"
+      url: "mailto:hello@loxodromic.systems"
+      icon: "fa fa-envelope"
+
+languages:
+  en:
+    weight: 10
+    languageName: "English"
+    contentDir: "content/en"
+
+services:
+  googleAnalytics:
+    id: G-C6HTB86YPX
